@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>To-do-List</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="le-removebg-preview.png" alt="" width="333px" height="188px">
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <button type="button" id="btn">Ajouter</button>
+            <div class="container_formulaire">
+                <i id="xmark" class="fa-solid fa-xmark"></i>
+                <label for="pet-select">Jour de la semaine</label>
+                <select name="pets" id="pet-select">
+                  <option value="">Jour</option>
+                  <option value="lundi">Lundi</option>
+                  <option value="mardi">Mardi</option>
+                  <option value="mercredi">Mercredi</option>
+                  <option value="jeudi">Jeudi</option>
+                  <option value="vendredi">Vendredi</option>
+                  <option value="samedi">Samedi</option>
+                </select>
+                <input type="text" id="nom" name="nom" placeholder="Nom">
+                <input type="text" id="prenom" name="prenom" placeholder="Prenom">
+                <input type="text" id="tache" name="tache" placeholder="Tache">
+                <textarea name="tache_a_effectuer" id="tache_a_effectuer" cols="30" rows="10" placeholder="Description de la tache"></textarea>
+                <button type="submit" id="add" name="add">Ajouter</button>
+            </div>
+            <table>
+                <tr>
+                    <th id="petit"></th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                </tr>
+                <tr>
+                    <td id="petit"></td>
+                    <td id="lundi" class="column"></td>
+                    <td id="mardi"  class="column"></td>
+                    <td id="mercredi" class="column"></td>
+                    <td id="jeudi" class="column"></td>
+                    <td id="vendredi" class="column"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="form">
+            <form id="signup-form">
+                <label for="email">Adresse Mail:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Mot de Passe:</label>
+                <input type="password" id="password" name="password">
+                <button id="create-account-button">Créer un compte</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="assets/main.js"></script>
+    <script src="https://kit.fontawesome.com/9d929d966a.js" crossorigin="anonymous"></script>
+</body>
+</html>
